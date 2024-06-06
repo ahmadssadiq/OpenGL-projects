@@ -4,6 +4,7 @@
 #include <GLFW/glfw3.h>
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
+void processInput(GLFWwindow *window);
 
 int main()
 {
@@ -37,6 +38,9 @@ int main()
     // this is the render loop to keep the window opened until its told to close.
     while (!glfwWindowShouldClose(window))
     {
+        // process input
+        processInput(window);
+        // keep render running
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
@@ -53,4 +57,12 @@ void framebuffer_size_callback(GLFWwindow *window, int width, int height)
     // make sure the viewport matches the new window dimensions; note that width and
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
+}
+
+void processInput(GLFWwindow *window)
+{
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    {
+        glfwSetWindowShouldClose(window, true);
+    }
 }
