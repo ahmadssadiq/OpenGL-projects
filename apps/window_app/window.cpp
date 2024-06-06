@@ -40,8 +40,16 @@ int main()
     {
         // process input
         processInput(window);
+
+        // rendering commands here
+        glClearColor(0.2f, 0.3f, 0.5f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
         // keep render running
         glfwSwapBuffers(window);
+        /*what buffer is referred to is that theres two screens (buffers)
+        what this is used for is that the behind buffer is first rendered, which we cant see,
+        then when the full rendering is done then it swaps the two buffers. One being which is visualised to us and
+        the other one being the one which is getting rendered behind the scenes. */
         glfwPollEvents();
     }
 
