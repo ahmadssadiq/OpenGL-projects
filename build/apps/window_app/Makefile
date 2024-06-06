@@ -57,10 +57,10 @@ RM = /opt/homebrew/lib/python3.11/site-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/opengleg
+CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/opengleg/build
+CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/opengleg/build/CMakeFiles /Users/ahmadsadiq/Downloads/opengleg/build/apps/window_app//CMakeFiles/progress.marks
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/window_app/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/opengleg/build/CMakeFiles 0
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles /Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/window_app//CMakeFiles/progress.marks
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/window_app/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/window_app/clean
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/window_app/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/window_app/preinstall
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/window_app/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/window_app/preinstall
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/window_app/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 apps/window_app/CMakeFiles/window.dir/rule:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/window_app/CMakeFiles/window.dir/rule
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/window_app/CMakeFiles/window.dir/rule
 .PHONY : apps/window_app/CMakeFiles/window.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ window: apps/window_app/CMakeFiles/window.dir/rule
 
 # fast build rule for target.
 window/fast:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/build
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/build
 .PHONY : window/fast
 
 window.o: window.cpp.o
@@ -180,7 +180,7 @@ window.o: window.cpp.o
 
 # target to build an object file
 window.cpp.o:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/window.cpp.o
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/window.cpp.o
 .PHONY : window.cpp.o
 
 window.i: window.cpp.i
@@ -188,7 +188,7 @@ window.i: window.cpp.i
 
 # target to preprocess a source file
 window.cpp.i:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/window.cpp.i
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/window.cpp.i
 .PHONY : window.cpp.i
 
 window.s: window.cpp.s
@@ -196,7 +196,7 @@ window.s: window.cpp.s
 
 # target to generate assembly for a file
 window.cpp.s:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/window.cpp.s
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/window.cpp.s
 .PHONY : window.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

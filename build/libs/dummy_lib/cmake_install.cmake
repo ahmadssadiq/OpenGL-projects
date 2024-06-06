@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ahmadsadiq/Downloads/opengleg/libs/dummy_lib
+# Install script for directory: /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/dummy_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/ahmadsadiq/Downloads/opengleg/build/libs/dummy_lib/src/cmake_install.cmake")
+  include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/dummy_lib/src/cmake_install.cmake")
 
 endif()
 

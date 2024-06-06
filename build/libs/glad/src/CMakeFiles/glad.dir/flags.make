@@ -4,7 +4,7 @@
 # compile C with /Library/Developer/CommandLineTools/usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/ahmadsadiq/Downloads/opengleg/libs/glad/src/../include
+C_INCLUDES = -I/Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glad/src/../include
 
 C_FLAGSarm64 =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
 

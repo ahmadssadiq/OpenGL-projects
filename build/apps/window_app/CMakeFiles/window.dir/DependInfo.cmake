@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ahmadsadiq/Downloads/opengleg/apps/window_app/window.cpp" "apps/window_app/CMakeFiles/window.dir/window.cpp.o" "gcc" "apps/window_app/CMakeFiles/window.dir/window.cpp.o.d"
+  "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/window_app/window.cpp" "apps/window_app/CMakeFiles/window.dir/window.cpp.o" "gcc" "apps/window_app/CMakeFiles/window.dir/window.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

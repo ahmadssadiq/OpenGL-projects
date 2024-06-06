@@ -57,10 +57,10 @@ RM = /opt/homebrew/lib/python3.11/site-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/opengleg
+CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/opengleg/build
+CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/opengleg/build/CMakeFiles /Users/ahmadsadiq/Downloads/opengleg/build/libs/play_lib/src//CMakeFiles/progress.marks
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/play_lib/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/opengleg/build/CMakeFiles 0
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/play_lib/src//CMakeFiles/progress.marks
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/play_lib/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/play_lib/src/clean
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/play_lib/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/play_lib/src/preinstall
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/play_lib/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/play_lib/src/preinstall
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/play_lib/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/play_lib/src/CMakeFiles/play.dir/rule:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/play_lib/src/CMakeFiles/play.dir/rule
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/play_lib/src/CMakeFiles/play.dir/rule
 .PHONY : libs/play_lib/src/CMakeFiles/play.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ play: libs/play_lib/src/CMakeFiles/play.dir/rule
 
 # fast build rule for target.
 play/fast:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f libs/play_lib/src/CMakeFiles/play.dir/build.make libs/play_lib/src/CMakeFiles/play.dir/build
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f libs/play_lib/src/CMakeFiles/play.dir/build.make libs/play_lib/src/CMakeFiles/play.dir/build
 .PHONY : play/fast
 
 play.o: play.cpp.o
@@ -180,7 +180,7 @@ play.o: play.cpp.o
 
 # target to build an object file
 play.cpp.o:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f libs/play_lib/src/CMakeFiles/play.dir/build.make libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f libs/play_lib/src/CMakeFiles/play.dir/build.make libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o
 .PHONY : play.cpp.o
 
 play.i: play.cpp.i
@@ -188,7 +188,7 @@ play.i: play.cpp.i
 
 # target to preprocess a source file
 play.cpp.i:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f libs/play_lib/src/CMakeFiles/play.dir/build.make libs/play_lib/src/CMakeFiles/play.dir/play.cpp.i
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f libs/play_lib/src/CMakeFiles/play.dir/build.make libs/play_lib/src/CMakeFiles/play.dir/play.cpp.i
 .PHONY : play.cpp.i
 
 play.s: play.cpp.s
@@ -196,7 +196,7 @@ play.s: play.cpp.s
 
 # target to generate assembly for a file
 play.cpp.s:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f libs/play_lib/src/CMakeFiles/play.dir/build.make libs/play_lib/src/CMakeFiles/play.dir/play.cpp.s
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f libs/play_lib/src/CMakeFiles/play.dir/build.make libs/play_lib/src/CMakeFiles/play.dir/play.cpp.s
 .PHONY : play.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

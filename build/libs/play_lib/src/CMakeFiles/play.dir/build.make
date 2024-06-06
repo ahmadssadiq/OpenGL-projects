@@ -53,10 +53,10 @@ RM = /opt/homebrew/lib/python3.11/site-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/opengleg
+CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/opengleg/build
+CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects/build
 
 # Include any dependencies generated for this target.
 include libs/play_lib/src/CMakeFiles/play.dir/depend.make
@@ -70,18 +70,18 @@ include libs/play_lib/src/CMakeFiles/play.dir/progress.make
 include libs/play_lib/src/CMakeFiles/play.dir/flags.make
 
 libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o: libs/play_lib/src/CMakeFiles/play.dir/flags.make
-libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o: /Users/ahmadsadiq/Downloads/opengleg/libs/play_lib/src/play.cpp
+libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o: /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/play_lib/src/play.cpp
 libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o: libs/play_lib/src/CMakeFiles/play.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ahmadsadiq/Downloads/opengleg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o"
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/play_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o -MF CMakeFiles/play.dir/play.cpp.o.d -o CMakeFiles/play.dir/play.cpp.o -c /Users/ahmadsadiq/Downloads/opengleg/libs/play_lib/src/play.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o"
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/play_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o -MF CMakeFiles/play.dir/play.cpp.o.d -o CMakeFiles/play.dir/play.cpp.o -c /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/play_lib/src/play.cpp
 
 libs/play_lib/src/CMakeFiles/play.dir/play.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/play.dir/play.cpp.i"
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/play_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ahmadsadiq/Downloads/opengleg/libs/play_lib/src/play.cpp > CMakeFiles/play.dir/play.cpp.i
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/play_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/play_lib/src/play.cpp > CMakeFiles/play.dir/play.cpp.i
 
 libs/play_lib/src/CMakeFiles/play.dir/play.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/play.dir/play.cpp.s"
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/play_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ahmadsadiq/Downloads/opengleg/libs/play_lib/src/play.cpp -o CMakeFiles/play.dir/play.cpp.s
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/play_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/play_lib/src/play.cpp -o CMakeFiles/play.dir/play.cpp.s
 
 # Object files for target play
 play_OBJECTS = \
@@ -93,19 +93,19 @@ play_EXTERNAL_OBJECTS =
 libs/play_lib/src/libplay.a: libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o
 libs/play_lib/src/libplay.a: libs/play_lib/src/CMakeFiles/play.dir/build.make
 libs/play_lib/src/libplay.a: libs/play_lib/src/CMakeFiles/play.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ahmadsadiq/Downloads/opengleg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libplay.a"
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/play_lib/src && $(CMAKE_COMMAND) -P CMakeFiles/play.dir/cmake_clean_target.cmake
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/play_lib/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/play.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libplay.a"
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/play_lib/src && $(CMAKE_COMMAND) -P CMakeFiles/play.dir/cmake_clean_target.cmake
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/play_lib/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/play.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/play_lib/src/CMakeFiles/play.dir/build: libs/play_lib/src/libplay.a
 .PHONY : libs/play_lib/src/CMakeFiles/play.dir/build
 
 libs/play_lib/src/CMakeFiles/play.dir/clean:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/play_lib/src && $(CMAKE_COMMAND) -P CMakeFiles/play.dir/cmake_clean.cmake
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/play_lib/src && $(CMAKE_COMMAND) -P CMakeFiles/play.dir/cmake_clean.cmake
 .PHONY : libs/play_lib/src/CMakeFiles/play.dir/clean
 
 libs/play_lib/src/CMakeFiles/play.dir/depend:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ahmadsadiq/Downloads/opengleg /Users/ahmadsadiq/Downloads/opengleg/libs/play_lib/src /Users/ahmadsadiq/Downloads/opengleg/build /Users/ahmadsadiq/Downloads/opengleg/build/libs/play_lib/src /Users/ahmadsadiq/Downloads/opengleg/build/libs/play_lib/src/CMakeFiles/play.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ahmadsadiq/Downloads/OpenGL-projects /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/play_lib/src /Users/ahmadsadiq/Downloads/OpenGL-projects/build /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/play_lib/src /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/play_lib/src/CMakeFiles/play.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libs/play_lib/src/CMakeFiles/play.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/docs
+# Install script for directory: /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/Users/ahmadsadiq/Downloads/opengleg/build/libs/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/Users/ahmadsadiq/Downloads/opengleg/build/libs/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/Users/ahmadsadiq/Downloads/opengleg/build/libs/glfw/install_manifest.txt" files)
+file(READ "/Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ahmadsadiq/Downloads/opengleg/libs/glad/src
+# Install script for directory: /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glad/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

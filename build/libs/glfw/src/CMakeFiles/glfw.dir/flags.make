@@ -4,7 +4,7 @@
 # compile C with /Library/Developer/CommandLineTools/usr/bin/cc
 C_DEFINES = -D_GLFW_COCOA
 
-C_INCLUDES = -I/Users/ahmadsadiq/Downloads/opengleg/libs/glfw/include -I/Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src -I/Users/ahmadsadiq/Downloads/opengleg/build/libs/glfw/src
+C_INCLUDES = -I/Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/include -I/Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src -I/Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glfw/src
 
 C_FLAGSarm64 = -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fPIC -Wall
 

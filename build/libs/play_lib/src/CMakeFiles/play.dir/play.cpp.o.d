@@ -1,5 +1,5 @@
 libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o: \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/play_lib/src/play.cpp \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/play_lib/src/play.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__config \

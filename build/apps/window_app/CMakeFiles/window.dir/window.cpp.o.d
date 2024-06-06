@@ -1,5 +1,5 @@
 apps/window_app/CMakeFiles/window.dir/window.cpp.o: \
-  /Users/ahmadsadiq/Downloads/opengleg/apps/window_app/window.cpp \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/apps/window_app/window.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__config \
@@ -791,6 +791,6 @@ apps/window_app/CMakeFiles/window.dir/window.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glad/src/../include/glad/glad.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glad/src/../include/KHR/khrplatform.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/include/GLFW/glfw3.h
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glad/src/../include/glad/glad.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glad/src/../include/KHR/khrplatform.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/include/GLFW/glfw3.h

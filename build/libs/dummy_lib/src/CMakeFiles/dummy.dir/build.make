@@ -53,10 +53,10 @@ RM = /opt/homebrew/lib/python3.11/site-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/opengleg
+CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/opengleg/build
+CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects/build
 
 # Include any dependencies generated for this target.
 include libs/dummy_lib/src/CMakeFiles/dummy.dir/depend.make
@@ -70,18 +70,18 @@ include libs/dummy_lib/src/CMakeFiles/dummy.dir/progress.make
 include libs/dummy_lib/src/CMakeFiles/dummy.dir/flags.make
 
 libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.o: libs/dummy_lib/src/CMakeFiles/dummy.dir/flags.make
-libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.o: /Users/ahmadsadiq/Downloads/opengleg/libs/dummy_lib/src/dummy.cpp
+libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.o: /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/dummy_lib/src/dummy.cpp
 libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.o: libs/dummy_lib/src/CMakeFiles/dummy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ahmadsadiq/Downloads/opengleg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.o"
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/dummy_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.o -MF CMakeFiles/dummy.dir/dummy.cpp.o.d -o CMakeFiles/dummy.dir/dummy.cpp.o -c /Users/ahmadsadiq/Downloads/opengleg/libs/dummy_lib/src/dummy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.o"
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/dummy_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.o -MF CMakeFiles/dummy.dir/dummy.cpp.o.d -o CMakeFiles/dummy.dir/dummy.cpp.o -c /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/dummy_lib/src/dummy.cpp
 
 libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dummy.dir/dummy.cpp.i"
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/dummy_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ahmadsadiq/Downloads/opengleg/libs/dummy_lib/src/dummy.cpp > CMakeFiles/dummy.dir/dummy.cpp.i
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/dummy_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/dummy_lib/src/dummy.cpp > CMakeFiles/dummy.dir/dummy.cpp.i
 
 libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dummy.dir/dummy.cpp.s"
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/dummy_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ahmadsadiq/Downloads/opengleg/libs/dummy_lib/src/dummy.cpp -o CMakeFiles/dummy.dir/dummy.cpp.s
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/dummy_lib/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/dummy_lib/src/dummy.cpp -o CMakeFiles/dummy.dir/dummy.cpp.s
 
 # Object files for target dummy
 dummy_OBJECTS = \
@@ -93,19 +93,19 @@ dummy_EXTERNAL_OBJECTS =
 libs/dummy_lib/src/libdummy.a: libs/dummy_lib/src/CMakeFiles/dummy.dir/dummy.cpp.o
 libs/dummy_lib/src/libdummy.a: libs/dummy_lib/src/CMakeFiles/dummy.dir/build.make
 libs/dummy_lib/src/libdummy.a: libs/dummy_lib/src/CMakeFiles/dummy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ahmadsadiq/Downloads/opengleg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libdummy.a"
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/dummy_lib/src && $(CMAKE_COMMAND) -P CMakeFiles/dummy.dir/cmake_clean_target.cmake
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/dummy_lib/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dummy.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libdummy.a"
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/dummy_lib/src && $(CMAKE_COMMAND) -P CMakeFiles/dummy.dir/cmake_clean_target.cmake
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/dummy_lib/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dummy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/dummy_lib/src/CMakeFiles/dummy.dir/build: libs/dummy_lib/src/libdummy.a
 .PHONY : libs/dummy_lib/src/CMakeFiles/dummy.dir/build
 
 libs/dummy_lib/src/CMakeFiles/dummy.dir/clean:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/dummy_lib/src && $(CMAKE_COMMAND) -P CMakeFiles/dummy.dir/cmake_clean.cmake
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/dummy_lib/src && $(CMAKE_COMMAND) -P CMakeFiles/dummy.dir/cmake_clean.cmake
 .PHONY : libs/dummy_lib/src/CMakeFiles/dummy.dir/clean
 
 libs/dummy_lib/src/CMakeFiles/dummy.dir/depend:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ahmadsadiq/Downloads/opengleg /Users/ahmadsadiq/Downloads/opengleg/libs/dummy_lib/src /Users/ahmadsadiq/Downloads/opengleg/build /Users/ahmadsadiq/Downloads/opengleg/build/libs/dummy_lib/src /Users/ahmadsadiq/Downloads/opengleg/build/libs/dummy_lib/src/CMakeFiles/dummy.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ahmadsadiq/Downloads/OpenGL-projects /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/dummy_lib/src /Users/ahmadsadiq/Downloads/OpenGL-projects/build /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/dummy_lib/src /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/dummy_lib/src/CMakeFiles/dummy.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libs/dummy_lib/src/CMakeFiles/dummy.dir/depend
 

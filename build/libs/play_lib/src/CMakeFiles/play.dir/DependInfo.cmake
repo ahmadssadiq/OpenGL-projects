@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ahmadsadiq/Downloads/opengleg/libs/play_lib/src/play.cpp" "libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o" "gcc" "libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o.d"
+  "/Users/ahmadsadiq/Downloads/OpenGL-projects/libs/play_lib/src/play.cpp" "libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o" "gcc" "libs/play_lib/src/CMakeFiles/play.dir/play.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

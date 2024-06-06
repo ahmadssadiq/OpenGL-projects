@@ -53,10 +53,10 @@ RM = /opt/homebrew/lib/python3.11/site-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/opengleg
+CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/opengleg/build
+CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include libs/glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include libs/glfw/CMakeFiles/uninstall.dir/progress.make
 
 libs/glfw/CMakeFiles/uninstall:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/glfw && /opt/homebrew/lib/python3.11/site-packages/cmake/data/bin/cmake -P /Users/ahmadsadiq/Downloads/opengleg/build/libs/glfw/cmake_uninstall.cmake
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glfw && /opt/homebrew/lib/python3.11/site-packages/cmake/data/bin/cmake -P /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glfw/cmake_uninstall.cmake
 
 uninstall: libs/glfw/CMakeFiles/uninstall
 uninstall: libs/glfw/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ libs/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : libs/glfw/CMakeFiles/uninstall.dir/build
 
 libs/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build/libs/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : libs/glfw/CMakeFiles/uninstall.dir/clean
 
 libs/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ahmadsadiq/Downloads/opengleg /Users/ahmadsadiq/Downloads/opengleg/libs/glfw /Users/ahmadsadiq/Downloads/opengleg/build /Users/ahmadsadiq/Downloads/opengleg/build/libs/glfw /Users/ahmadsadiq/Downloads/opengleg/build/libs/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ahmadsadiq/Downloads/OpenGL-projects /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw /Users/ahmadsadiq/Downloads/OpenGL-projects/build /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glfw /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libs/glfw/CMakeFiles/uninstall.dir/depend
 

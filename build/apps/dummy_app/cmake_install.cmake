@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ahmadsadiq/Downloads/opengleg/apps/dummy_app
+# Install script for directory: /Users/ahmadsadiq/Downloads/OpenGL-projects/apps/dummy_app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

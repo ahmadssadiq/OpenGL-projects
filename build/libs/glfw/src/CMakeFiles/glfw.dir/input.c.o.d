@@ -1,7 +1,7 @@
 libs/glfw/src/CMakeFiles/glfw.dir/input.c.o: \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/input.c \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/internal.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/../include/GLFW/glfw3.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/input.c \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/internal.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/../include/GLFW/glfw3.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/stdint.h \
@@ -30,9 +30,9 @@ libs/glfw/src/CMakeFiles/glfw.dir/input.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_intmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_uintmax_t.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/platform.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/null_platform.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/cocoa_platform.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/platform.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/null_platform.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/cocoa_platform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h \
@@ -786,14 +786,14 @@ libs/glfw/src/CMakeFiles/glfw.dir/input.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDUsageTables.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDValue.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDTransaction.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/null_joystick.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/cocoa_joystick.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/null_joystick.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/cocoa_joystick.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOCFPlugIn.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/posix_thread.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/posix_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/pthread/sched.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/pthread/pthread_impl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/pthread/qos.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/cocoa_time.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/../include/GLFW/glfw3native.h \
-  /Users/ahmadsadiq/Downloads/opengleg/libs/glfw/src/mappings.h
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/cocoa_time.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/../include/GLFW/glfw3native.h \
+  /Users/ahmadsadiq/Downloads/OpenGL-projects/libs/glfw/src/mappings.h

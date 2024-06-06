@@ -57,10 +57,10 @@ RM = /opt/homebrew/lib/python3.11/site-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/opengleg
+CMAKE_SOURCE_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/opengleg/build
+CMAKE_BINARY_DIR = /Users/ahmadsadiq/Downloads/OpenGL-projects/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/opengleg/build/CMakeFiles /Users/ahmadsadiq/Downloads/opengleg/build/libs/dummy_lib//CMakeFiles/progress.marks
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/dummy_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/opengleg/build/CMakeFiles 0
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles /Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/dummy_lib//CMakeFiles/progress.marks
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/dummy_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/dummy_lib/clean
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/dummy_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,17 +148,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/dummy_lib/preinstall
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/dummy_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/dummy_lib/preinstall
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/dummy_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -184,6 +184,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ahmadsadiq/Downloads/opengleg/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
