@@ -1,0 +1,1 @@
+void printDummy(int a, int b);

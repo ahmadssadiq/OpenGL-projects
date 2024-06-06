@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libplay.a CMakeFiles/play.dir/play.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libplay.a

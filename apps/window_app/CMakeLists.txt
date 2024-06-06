@@ -1,0 +1,5 @@
+# find_package(OpenGL REQUIRED)
+add_executable(window window.cpp)
+# target_link_libraries(window PRIVATE  ${OPENGL_LIBRARIES} glfw)
+target_link_libraries(window PRIVATE glfw)
+target_link_libraries(window PRIVATE glad)

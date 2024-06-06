@@ -1,0 +1,2 @@
+add_subdirectory(dummy_app)
+add_subdirectory(window_app)
