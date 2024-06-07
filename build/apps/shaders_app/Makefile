@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles /Users/ahmadsadiq/Downloads/OpenGL-projects/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles /Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/shaders_app//CMakeFiles/progress.marks
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/shaders_app/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/shaders_app/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,148 +148,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/shaders_app/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/shaders_app/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named dummy
+# Convenience name for target.
+apps/shaders_app/CMakeFiles/shaders.dir/rule:
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/shaders_app/CMakeFiles/shaders.dir/rule
+.PHONY : apps/shaders_app/CMakeFiles/shaders.dir/rule
 
-# Build rule for target.
-dummy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dummy
-.PHONY : dummy
-
-# fast build rule for target.
-dummy/fast:
-	$(MAKE) $(MAKESILENT) -f libs/dummy_lib/src/CMakeFiles/dummy.dir/build.make libs/dummy_lib/src/CMakeFiles/dummy.dir/build
-.PHONY : dummy/fast
-
-#=============================================================================
-# Target rules for targets named play
-
-# Build rule for target.
-play: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 play
-.PHONY : play
-
-# fast build rule for target.
-play/fast:
-	$(MAKE) $(MAKESILENT) -f libs/play_lib/src/CMakeFiles/play.dir/build.make libs/play_lib/src/CMakeFiles/play.dir/build
-.PHONY : play/fast
-
-#=============================================================================
-# Target rules for targets named uninstall
-
-# Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
-.PHONY : uninstall
-
-# fast build rule for target.
-uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/CMakeFiles/uninstall.dir/build.make libs/glfw/CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
-
-#=============================================================================
-# Target rules for targets named glfw
-
-# Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
-.PHONY : glfw
-
-# fast build rule for target.
-glfw/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/glfw.dir/build.make libs/glfw/src/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
-
-#=============================================================================
-# Target rules for targets named update_mappings
-
-# Build rule for target.
-update_mappings: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update_mappings
-.PHONY : update_mappings
-
-# fast build rule for target.
-update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
-.PHONY : update_mappings/fast
-
-#=============================================================================
-# Target rules for targets named glad
-
-# Build rule for target.
-glad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
-.PHONY : glad
-
-# fast build rule for target.
-glad/fast:
-	$(MAKE) $(MAKESILENT) -f libs/glad/src/CMakeFiles/glad.dir/build.make libs/glad/src/CMakeFiles/glad.dir/build
-.PHONY : glad/fast
-
-#=============================================================================
-# Target rules for targets named app
-
-# Build rule for target.
-app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
-.PHONY : app
-
-# fast build rule for target.
-app/fast:
-	$(MAKE) $(MAKESILENT) -f apps/dummy_app/CMakeFiles/app.dir/build.make apps/dummy_app/CMakeFiles/app.dir/build
-.PHONY : app/fast
-
-#=============================================================================
-# Target rules for targets named window
-
-# Build rule for target.
-window: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 window
-.PHONY : window
-
-# fast build rule for target.
-window/fast:
-	$(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/build
-.PHONY : window/fast
-
-#=============================================================================
-# Target rules for targets named triangle
-
-# Build rule for target.
-triangle: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 triangle
-.PHONY : triangle
-
-# fast build rule for target.
-triangle/fast:
-	$(MAKE) $(MAKESILENT) -f apps/triangle_app/CMakeFiles/triangle.dir/build.make apps/triangle_app/CMakeFiles/triangle.dir/build
-.PHONY : triangle/fast
-
-#=============================================================================
-# Target rules for targets named shaders
-
-# Build rule for target.
-shaders: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shaders
+# Convenience name for target.
+shaders: apps/shaders_app/CMakeFiles/shaders.dir/rule
 .PHONY : shaders
 
 # fast build rule for target.
 shaders/fast:
-	$(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/build
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/build
 .PHONY : shaders/fast
+
+shaders.o: shaders.cpp.o
+.PHONY : shaders.o
+
+# target to build an object file
+shaders.cpp.o:
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/shaders.cpp.o
+.PHONY : shaders.cpp.o
+
+shaders.i: shaders.cpp.i
+.PHONY : shaders.i
+
+# target to preprocess a source file
+shaders.cpp.i:
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/shaders.cpp.i
+.PHONY : shaders.cpp.i
+
+shaders.s: shaders.cpp.s
+.PHONY : shaders.s
+
+# target to generate assembly for a file
+shaders.cpp.s:
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/shaders.cpp.s
+.PHONY : shaders.cpp.s
 
 # Help Target
 help:
@@ -303,16 +211,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... uninstall"
-	@echo "... update_mappings"
-	@echo "... app"
-	@echo "... dummy"
-	@echo "... glad"
-	@echo "... glfw"
-	@echo "... play"
 	@echo "... shaders"
-	@echo "... triangle"
-	@echo "... window"
+	@echo "... shaders.o"
+	@echo "... shaders.i"
+	@echo "... shaders.s"
 .PHONY : help
 
 
@@ -324,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ahmadsadiq/Downloads/OpenGL-projects/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

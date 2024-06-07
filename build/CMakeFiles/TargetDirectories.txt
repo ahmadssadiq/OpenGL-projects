@@ -97,3 +97,10 @@
 /Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/triangle_app/CMakeFiles/install.dir
 /Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/triangle_app/CMakeFiles/install/local.dir
 /Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/triangle_app/CMakeFiles/install/strip.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/shaders_app/CMakeFiles/shaders.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/shaders_app/CMakeFiles/edit_cache.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/shaders_app/CMakeFiles/rebuild_cache.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/shaders_app/CMakeFiles/list_install_components.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/shaders_app/CMakeFiles/install.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/shaders_app/CMakeFiles/install/local.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/shaders_app/CMakeFiles/install/strip.dir

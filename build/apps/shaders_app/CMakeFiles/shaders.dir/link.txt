@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/shaders.dir/shaders.cpp.o -o shaders  ../../libs/glad/src/libglad.a ../../libs/glfw/src/libglfw3.a -framework Cocoa -framework IOKit -framework CoreFoundation 

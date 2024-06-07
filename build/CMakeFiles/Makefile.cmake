@@ -10,6 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/ahmadsadiq/Downloads/OpenGL-projects/CMakeLists.txt"
   "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/CMakeLists.txt"
   "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/dummy_app/CMakeLists.txt"
+  "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/shaders_app/CMakeLists.txt"
   "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/triangle_app/CMakeLists.txt"
   "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/window_app/CMakeLists.txt"
   "CMakeFiles/3.27.7/CMakeCCompiler.cmake"
@@ -91,6 +92,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "apps/dummy_app/CMakeFiles/CMakeDirectoryInformation.cmake"
   "apps/window_app/CMakeFiles/CMakeDirectoryInformation.cmake"
   "apps/triangle_app/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "apps/shaders_app/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -104,4 +106,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "apps/dummy_app/CMakeFiles/app.dir/DependInfo.cmake"
   "apps/window_app/CMakeFiles/window.dir/DependInfo.cmake"
   "apps/triangle_app/CMakeFiles/triangle.dir/DependInfo.cmake"
+  "apps/shaders_app/CMakeFiles/shaders.dir/DependInfo.cmake"
   )

@@ -1,3 +1,4 @@
 add_subdirectory(dummy_app)
 add_subdirectory(window_app)
 add_subdirectory(triangle_app)
+add_subdirectory(shaders_app)

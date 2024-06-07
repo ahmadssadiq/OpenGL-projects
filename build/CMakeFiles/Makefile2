@@ -84,18 +84,21 @@ clean: apps/clean
 apps/all: apps/dummy_app/all
 apps/all: apps/window_app/all
 apps/all: apps/triangle_app/all
+apps/all: apps/shaders_app/all
 .PHONY : apps/all
 
 # Recursive "preinstall" directory target.
 apps/preinstall: apps/dummy_app/preinstall
 apps/preinstall: apps/window_app/preinstall
 apps/preinstall: apps/triangle_app/preinstall
+apps/preinstall: apps/shaders_app/preinstall
 .PHONY : apps/preinstall
 
 # Recursive "clean" directory target.
 apps/clean: apps/dummy_app/clean
 apps/clean: apps/window_app/clean
 apps/clean: apps/triangle_app/clean
+apps/clean: apps/shaders_app/clean
 .PHONY : apps/clean
 
 #=============================================================================
@@ -112,6 +115,21 @@ apps/dummy_app/preinstall:
 # Recursive "clean" directory target.
 apps/dummy_app/clean: apps/dummy_app/CMakeFiles/app.dir/clean
 .PHONY : apps/dummy_app/clean
+
+#=============================================================================
+# Directory level rules for directory apps/shaders_app
+
+# Recursive "all" directory target.
+apps/shaders_app/all: apps/shaders_app/CMakeFiles/shaders.dir/all
+.PHONY : apps/shaders_app/all
+
+# Recursive "preinstall" directory target.
+apps/shaders_app/preinstall:
+.PHONY : apps/shaders_app/preinstall
+
+# Recursive "clean" directory target.
+apps/shaders_app/clean: apps/shaders_app/CMakeFiles/shaders.dir/clean
+.PHONY : apps/shaders_app/clean
 
 #=============================================================================
 # Directory level rules for directory apps/triangle_app
@@ -418,7 +436,7 @@ libs/glfw/src/CMakeFiles/glfw.dir/clean:
 libs/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=33 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=35 "Built target update_mappings"
 .PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -498,7 +516,7 @@ apps/window_app/CMakeFiles/window.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 apps/window_app/CMakeFiles/window.dir/all: libs/glad/src/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=34,35 "Built target window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=36,37 "Built target window"
 .PHONY : apps/window_app/CMakeFiles/window.dir/all
 
 # Build rule for subdir invocation for target.
@@ -525,7 +543,7 @@ apps/triangle_app/CMakeFiles/triangle.dir/all: libs/glfw/src/CMakeFiles/glfw.dir
 apps/triangle_app/CMakeFiles/triangle.dir/all: libs/glad/src/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/triangle_app/CMakeFiles/triangle.dir/build.make apps/triangle_app/CMakeFiles/triangle.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/triangle_app/CMakeFiles/triangle.dir/build.make apps/triangle_app/CMakeFiles/triangle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=31,32 "Built target triangle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=33,34 "Built target triangle"
 .PHONY : apps/triangle_app/CMakeFiles/triangle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -543,6 +561,33 @@ triangle: apps/triangle_app/CMakeFiles/triangle.dir/rule
 apps/triangle_app/CMakeFiles/triangle.dir/clean:
 	$(MAKE) $(MAKESILENT) -f apps/triangle_app/CMakeFiles/triangle.dir/build.make apps/triangle_app/CMakeFiles/triangle.dir/clean
 .PHONY : apps/triangle_app/CMakeFiles/triangle.dir/clean
+
+#=============================================================================
+# Target rules for target apps/shaders_app/CMakeFiles/shaders.dir
+
+# All Build rule for target.
+apps/shaders_app/CMakeFiles/shaders.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
+apps/shaders_app/CMakeFiles/shaders.dir/all: libs/glad/src/CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/depend
+	$(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=31,32 "Built target shaders"
+.PHONY : apps/shaders_app/CMakeFiles/shaders.dir/all
+
+# Build rule for subdir invocation for target.
+apps/shaders_app/CMakeFiles/shaders.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 26
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/shaders_app/CMakeFiles/shaders.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 0
+.PHONY : apps/shaders_app/CMakeFiles/shaders.dir/rule
+
+# Convenience name for target.
+shaders: apps/shaders_app/CMakeFiles/shaders.dir/rule
+.PHONY : shaders
+
+# clean rule for target.
+apps/shaders_app/CMakeFiles/shaders.dir/clean:
+	$(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/clean
+.PHONY : apps/shaders_app/CMakeFiles/shaders.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
