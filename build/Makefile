@@ -240,6 +240,32 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
+# Target rules for targets named shader
+
+# Build rule for target.
+shader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shader
+.PHONY : shader
+
+# fast build rule for target.
+shader/fast:
+	$(MAKE) $(MAKESILENT) -f libs/common/src/CMakeFiles/shader.dir/build.make libs/common/src/CMakeFiles/shader.dir/build
+.PHONY : shader/fast
+
+#=============================================================================
+# Target rules for targets named stb_image
+
+# Build rule for target.
+stb_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_image
+.PHONY : stb_image
+
+# fast build rule for target.
+stb_image/fast:
+	$(MAKE) $(MAKESILENT) -f libs/common/src/CMakeFiles/stb_image.dir/build.make libs/common/src/CMakeFiles/stb_image.dir/build
+.PHONY : stb_image/fast
+
+#=============================================================================
 # Target rules for targets named app
 
 # Build rule for target.
@@ -279,6 +305,19 @@ triangle/fast:
 .PHONY : triangle/fast
 
 #=============================================================================
+# Target rules for targets named textures_app
+
+# Build rule for target.
+textures_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 textures_app
+.PHONY : textures_app
+
+# fast build rule for target.
+textures_app/fast:
+	$(MAKE) $(MAKESILENT) -f apps/textures_app/CMakeFiles/textures_app.dir/build.make apps/textures_app/CMakeFiles/textures_app.dir/build
+.PHONY : textures_app/fast
+
+#=============================================================================
 # Target rules for targets named shaders
 
 # Build rule for target.
@@ -310,7 +349,10 @@ help:
 	@echo "... glad"
 	@echo "... glfw"
 	@echo "... play"
+	@echo "... shader"
 	@echo "... shaders"
+	@echo "... stb_image"
+	@echo "... textures_app"
 	@echo "... triangle"
 	@echo "... window"
 .PHONY : help

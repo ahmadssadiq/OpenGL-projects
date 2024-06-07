@@ -84,6 +84,7 @@ clean: apps/clean
 apps/all: apps/dummy_app/all
 apps/all: apps/window_app/all
 apps/all: apps/triangle_app/all
+apps/all: apps/textures_app/all
 apps/all: apps/shaders_app/all
 .PHONY : apps/all
 
@@ -91,6 +92,7 @@ apps/all: apps/shaders_app/all
 apps/preinstall: apps/dummy_app/preinstall
 apps/preinstall: apps/window_app/preinstall
 apps/preinstall: apps/triangle_app/preinstall
+apps/preinstall: apps/textures_app/preinstall
 apps/preinstall: apps/shaders_app/preinstall
 .PHONY : apps/preinstall
 
@@ -98,6 +100,7 @@ apps/preinstall: apps/shaders_app/preinstall
 apps/clean: apps/dummy_app/clean
 apps/clean: apps/window_app/clean
 apps/clean: apps/triangle_app/clean
+apps/clean: apps/textures_app/clean
 apps/clean: apps/shaders_app/clean
 .PHONY : apps/clean
 
@@ -130,6 +133,21 @@ apps/shaders_app/preinstall:
 # Recursive "clean" directory target.
 apps/shaders_app/clean: apps/shaders_app/CMakeFiles/shaders.dir/clean
 .PHONY : apps/shaders_app/clean
+
+#=============================================================================
+# Directory level rules for directory apps/textures_app
+
+# Recursive "all" directory target.
+apps/textures_app/all: apps/textures_app/CMakeFiles/textures_app.dir/all
+.PHONY : apps/textures_app/all
+
+# Recursive "preinstall" directory target.
+apps/textures_app/preinstall:
+.PHONY : apps/textures_app/preinstall
+
+# Recursive "clean" directory target.
+apps/textures_app/clean: apps/textures_app/CMakeFiles/textures_app.dir/clean
+.PHONY : apps/textures_app/clean
 
 #=============================================================================
 # Directory level rules for directory apps/triangle_app
@@ -169,6 +187,7 @@ libs/all: libs/dummy_lib/all
 libs/all: libs/play_lib/all
 libs/all: libs/glfw/all
 libs/all: libs/glad/all
+libs/all: libs/common/all
 .PHONY : libs/all
 
 # Recursive "preinstall" directory target.
@@ -176,6 +195,7 @@ libs/preinstall: libs/dummy_lib/preinstall
 libs/preinstall: libs/play_lib/preinstall
 libs/preinstall: libs/glfw/preinstall
 libs/preinstall: libs/glad/preinstall
+libs/preinstall: libs/common/preinstall
 .PHONY : libs/preinstall
 
 # Recursive "clean" directory target.
@@ -183,7 +203,40 @@ libs/clean: libs/dummy_lib/clean
 libs/clean: libs/play_lib/clean
 libs/clean: libs/glfw/clean
 libs/clean: libs/glad/clean
+libs/clean: libs/common/clean
 .PHONY : libs/clean
+
+#=============================================================================
+# Directory level rules for directory libs/common
+
+# Recursive "all" directory target.
+libs/common/all: libs/common/src/all
+.PHONY : libs/common/all
+
+# Recursive "preinstall" directory target.
+libs/common/preinstall: libs/common/src/preinstall
+.PHONY : libs/common/preinstall
+
+# Recursive "clean" directory target.
+libs/common/clean: libs/common/src/clean
+.PHONY : libs/common/clean
+
+#=============================================================================
+# Directory level rules for directory libs/common/src
+
+# Recursive "all" directory target.
+libs/common/src/all: libs/common/src/CMakeFiles/shader.dir/all
+libs/common/src/all: libs/common/src/CMakeFiles/stb_image.dir/all
+.PHONY : libs/common/src/all
+
+# Recursive "preinstall" directory target.
+libs/common/src/preinstall:
+.PHONY : libs/common/src/preinstall
+
+# Recursive "clean" directory target.
+libs/common/src/clean: libs/common/src/CMakeFiles/shader.dir/clean
+libs/common/src/clean: libs/common/src/CMakeFiles/stb_image.dir/clean
+.PHONY : libs/common/src/clean
 
 #=============================================================================
 # Directory level rules for directory libs/dummy_lib
@@ -436,7 +489,7 @@ libs/glfw/src/CMakeFiles/glfw.dir/clean:
 libs/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/glfw/src/CMakeFiles/update_mappings.dir/build.make libs/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=35 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=41 "Built target update_mappings"
 .PHONY : libs/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -482,6 +535,60 @@ libs/glad/src/CMakeFiles/glad.dir/clean:
 .PHONY : libs/glad/src/CMakeFiles/glad.dir/clean
 
 #=============================================================================
+# Target rules for target libs/common/src/CMakeFiles/shader.dir
+
+# All Build rule for target.
+libs/common/src/CMakeFiles/shader.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
+libs/common/src/CMakeFiles/shader.dir/all: libs/glad/src/CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/common/src/CMakeFiles/shader.dir/build.make libs/common/src/CMakeFiles/shader.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/common/src/CMakeFiles/shader.dir/build.make libs/common/src/CMakeFiles/shader.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=31,32 "Built target shader"
+.PHONY : libs/common/src/CMakeFiles/shader.dir/all
+
+# Build rule for subdir invocation for target.
+libs/common/src/CMakeFiles/shader.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 26
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/common/src/CMakeFiles/shader.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 0
+.PHONY : libs/common/src/CMakeFiles/shader.dir/rule
+
+# Convenience name for target.
+shader: libs/common/src/CMakeFiles/shader.dir/rule
+.PHONY : shader
+
+# clean rule for target.
+libs/common/src/CMakeFiles/shader.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/common/src/CMakeFiles/shader.dir/build.make libs/common/src/CMakeFiles/shader.dir/clean
+.PHONY : libs/common/src/CMakeFiles/shader.dir/clean
+
+#=============================================================================
+# Target rules for target libs/common/src/CMakeFiles/stb_image.dir
+
+# All Build rule for target.
+libs/common/src/CMakeFiles/stb_image.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
+libs/common/src/CMakeFiles/stb_image.dir/all: libs/glad/src/CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/common/src/CMakeFiles/stb_image.dir/build.make libs/common/src/CMakeFiles/stb_image.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/common/src/CMakeFiles/stb_image.dir/build.make libs/common/src/CMakeFiles/stb_image.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=35,36 "Built target stb_image"
+.PHONY : libs/common/src/CMakeFiles/stb_image.dir/all
+
+# Build rule for subdir invocation for target.
+libs/common/src/CMakeFiles/stb_image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 26
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/common/src/CMakeFiles/stb_image.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 0
+.PHONY : libs/common/src/CMakeFiles/stb_image.dir/rule
+
+# Convenience name for target.
+stb_image: libs/common/src/CMakeFiles/stb_image.dir/rule
+.PHONY : stb_image
+
+# clean rule for target.
+libs/common/src/CMakeFiles/stb_image.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/common/src/CMakeFiles/stb_image.dir/build.make libs/common/src/CMakeFiles/stb_image.dir/clean
+.PHONY : libs/common/src/CMakeFiles/stb_image.dir/clean
+
+#=============================================================================
 # Target rules for target apps/dummy_app/CMakeFiles/app.dir
 
 # All Build rule for target.
@@ -516,7 +623,7 @@ apps/window_app/CMakeFiles/window.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
 apps/window_app/CMakeFiles/window.dir/all: libs/glad/src/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/window_app/CMakeFiles/window.dir/build.make apps/window_app/CMakeFiles/window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=36,37 "Built target window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=42,43 "Built target window"
 .PHONY : apps/window_app/CMakeFiles/window.dir/all
 
 # Build rule for subdir invocation for target.
@@ -543,7 +650,7 @@ apps/triangle_app/CMakeFiles/triangle.dir/all: libs/glfw/src/CMakeFiles/glfw.dir
 apps/triangle_app/CMakeFiles/triangle.dir/all: libs/glad/src/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/triangle_app/CMakeFiles/triangle.dir/build.make apps/triangle_app/CMakeFiles/triangle.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/triangle_app/CMakeFiles/triangle.dir/build.make apps/triangle_app/CMakeFiles/triangle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=33,34 "Built target triangle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=39,40 "Built target triangle"
 .PHONY : apps/triangle_app/CMakeFiles/triangle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -563,6 +670,35 @@ apps/triangle_app/CMakeFiles/triangle.dir/clean:
 .PHONY : apps/triangle_app/CMakeFiles/triangle.dir/clean
 
 #=============================================================================
+# Target rules for target apps/textures_app/CMakeFiles/textures_app.dir
+
+# All Build rule for target.
+apps/textures_app/CMakeFiles/textures_app.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/all
+apps/textures_app/CMakeFiles/textures_app.dir/all: libs/glad/src/CMakeFiles/glad.dir/all
+apps/textures_app/CMakeFiles/textures_app.dir/all: libs/common/src/CMakeFiles/shader.dir/all
+apps/textures_app/CMakeFiles/textures_app.dir/all: libs/common/src/CMakeFiles/stb_image.dir/all
+	$(MAKE) $(MAKESILENT) -f apps/textures_app/CMakeFiles/textures_app.dir/build.make apps/textures_app/CMakeFiles/textures_app.dir/depend
+	$(MAKE) $(MAKESILENT) -f apps/textures_app/CMakeFiles/textures_app.dir/build.make apps/textures_app/CMakeFiles/textures_app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=37,38 "Built target textures_app"
+.PHONY : apps/textures_app/CMakeFiles/textures_app.dir/all
+
+# Build rule for subdir invocation for target.
+apps/textures_app/CMakeFiles/textures_app.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 30
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/textures_app/CMakeFiles/textures_app.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles 0
+.PHONY : apps/textures_app/CMakeFiles/textures_app.dir/rule
+
+# Convenience name for target.
+textures_app: apps/textures_app/CMakeFiles/textures_app.dir/rule
+.PHONY : textures_app
+
+# clean rule for target.
+apps/textures_app/CMakeFiles/textures_app.dir/clean:
+	$(MAKE) $(MAKESILENT) -f apps/textures_app/CMakeFiles/textures_app.dir/build.make apps/textures_app/CMakeFiles/textures_app.dir/clean
+.PHONY : apps/textures_app/CMakeFiles/textures_app.dir/clean
+
+#=============================================================================
 # Target rules for target apps/shaders_app/CMakeFiles/shaders.dir
 
 # All Build rule for target.
@@ -570,7 +706,7 @@ apps/shaders_app/CMakeFiles/shaders.dir/all: libs/glfw/src/CMakeFiles/glfw.dir/a
 apps/shaders_app/CMakeFiles/shaders.dir/all: libs/glad/src/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=31,32 "Built target shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahmadsadiq/Downloads/OpenGL-projects/build/CMakeFiles --progress-num=33,34 "Built target shaders"
 .PHONY : apps/shaders_app/CMakeFiles/shaders.dir/all
 
 # Build rule for subdir invocation for target.

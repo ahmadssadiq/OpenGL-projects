@@ -42,6 +42,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/dummy_app/cmake_install.cmake")
   include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/window_app/cmake_install.cmake")
   include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/triangle_app/cmake_install.cmake")
+  include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/textures_app/cmake_install.cmake")
   include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/shaders_app/cmake_install.cmake")
 
 endif()
