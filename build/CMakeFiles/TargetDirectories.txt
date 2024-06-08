@@ -182,3 +182,10 @@
 /Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/coordinate_app/CMakeFiles/install.dir
 /Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/coordinate_app/CMakeFiles/install/local.dir
 /Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/coordinate_app/CMakeFiles/install/strip.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/camera_app/CMakeFiles/camera.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/camera_app/CMakeFiles/edit_cache.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/camera_app/CMakeFiles/rebuild_cache.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/camera_app/CMakeFiles/list_install_components.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/camera_app/CMakeFiles/install.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/camera_app/CMakeFiles/install/local.dir
+/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/camera_app/CMakeFiles/install/strip.dir

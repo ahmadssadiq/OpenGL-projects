@@ -5,3 +5,5 @@ add_subdirectory(textures_app)
 add_subdirectory(shaders_app)
 add_subdirectory(transformation_app)
 add_subdirectory(coordinate_app)
+add_subdirectory(camera_app)
+

@@ -369,6 +369,19 @@ coordinate/fast:
 	$(MAKE) $(MAKESILENT) -f apps/coordinate_app/CMakeFiles/coordinate.dir/build.make apps/coordinate_app/CMakeFiles/coordinate.dir/build
 .PHONY : coordinate/fast
 
+#=============================================================================
+# Target rules for targets named camera
+
+# Build rule for target.
+camera: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 camera
+.PHONY : camera
+
+# fast build rule for target.
+camera/fast:
+	$(MAKE) $(MAKESILENT) -f apps/camera_app/CMakeFiles/camera.dir/build.make apps/camera_app/CMakeFiles/camera.dir/build
+.PHONY : camera/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -384,6 +397,7 @@ help:
 	@echo "... uninstall"
 	@echo "... update_mappings"
 	@echo "... app"
+	@echo "... camera"
 	@echo "... coordinate"
 	@echo "... dummy"
 	@echo "... glad"

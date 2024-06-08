@@ -46,6 +46,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/shaders_app/cmake_install.cmake")
   include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/transformation_app/cmake_install.cmake")
   include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/coordinate_app/cmake_install.cmake")
+  include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/apps/camera_app/cmake_install.cmake")
 
 endif()
 

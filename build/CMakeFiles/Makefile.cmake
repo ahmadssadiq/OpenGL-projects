@@ -9,6 +9,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/Users/ahmadsadiq/Downloads/OpenGL-projects/CMakeLists.txt"
   "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/CMakeLists.txt"
+  "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/camera_app/CMakeLists.txt"
   "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/coordinate_app/CMakeLists.txt"
   "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/dummy_app/CMakeLists.txt"
   "/Users/ahmadsadiq/Downloads/OpenGL-projects/apps/shaders_app/CMakeLists.txt"
@@ -128,6 +129,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "apps/shaders_app/CMakeFiles/CMakeDirectoryInformation.cmake"
   "apps/transformation_app/CMakeFiles/CMakeDirectoryInformation.cmake"
   "apps/coordinate_app/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "apps/camera_app/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -148,4 +150,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "apps/shaders_app/CMakeFiles/shaders.dir/DependInfo.cmake"
   "apps/transformation_app/CMakeFiles/transformation.dir/DependInfo.cmake"
   "apps/coordinate_app/CMakeFiles/coordinate.dir/DependInfo.cmake"
+  "apps/camera_app/CMakeFiles/camera.dir/DependInfo.cmake"
   )
