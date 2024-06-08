@@ -6,9 +6,13 @@ layout (location = 2) in vec2 aTexCoord;
 out vec3 ourColor;
 out vec2 TexCoord;
 
+uniform mat4 projection;  // Perspective
+uniform mat4 model; // 3D model
+uniform mat4 view;  // View
+
 void main()
 {
-	gl_Position = vec4(aPos, 1.0);
-	ourColor = aColor;
-	TexCoord = vec2(aTexCoord.x, aTexCoord.y);
+    gl_Position = projection * view * model * vec4(aPos, 1.0); 
+    ourColor = aColor;
+    TexCoord = vec2(aTexCoord.x, aTexCoord.y);
 }
