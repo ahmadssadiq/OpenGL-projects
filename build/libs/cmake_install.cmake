@@ -44,6 +44,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glfw/cmake_install.cmake")
   include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glad/cmake_install.cmake")
   include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/common/cmake_install.cmake")
+  include("/Users/ahmadsadiq/Downloads/OpenGL-projects/build/libs/glm/cmake_install.cmake")
 
 endif()
 

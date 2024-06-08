@@ -266,6 +266,19 @@ stb_image/fast:
 .PHONY : stb_image/fast
 
 #=============================================================================
+# Target rules for targets named glm_dummy
+
+# Build rule for target.
+glm_dummy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glm_dummy
+.PHONY : glm_dummy
+
+# fast build rule for target.
+glm_dummy/fast:
+	$(MAKE) $(MAKESILENT) -f libs/glm/glm/CMakeFiles/glm_dummy.dir/build.make libs/glm/glm/CMakeFiles/glm_dummy.dir/build
+.PHONY : glm_dummy/fast
+
+#=============================================================================
 # Target rules for targets named app
 
 # Build rule for target.
@@ -330,6 +343,32 @@ shaders/fast:
 	$(MAKE) $(MAKESILENT) -f apps/shaders_app/CMakeFiles/shaders.dir/build.make apps/shaders_app/CMakeFiles/shaders.dir/build
 .PHONY : shaders/fast
 
+#=============================================================================
+# Target rules for targets named transformation
+
+# Build rule for target.
+transformation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 transformation
+.PHONY : transformation
+
+# fast build rule for target.
+transformation/fast:
+	$(MAKE) $(MAKESILENT) -f apps/transformation_app/CMakeFiles/transformation.dir/build.make apps/transformation_app/CMakeFiles/transformation.dir/build
+.PHONY : transformation/fast
+
+#=============================================================================
+# Target rules for targets named coordinate
+
+# Build rule for target.
+coordinate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 coordinate
+.PHONY : coordinate
+
+# fast build rule for target.
+coordinate/fast:
+	$(MAKE) $(MAKESILENT) -f apps/coordinate_app/CMakeFiles/coordinate.dir/build.make apps/coordinate_app/CMakeFiles/coordinate.dir/build
+.PHONY : coordinate/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -345,14 +384,17 @@ help:
 	@echo "... uninstall"
 	@echo "... update_mappings"
 	@echo "... app"
+	@echo "... coordinate"
 	@echo "... dummy"
 	@echo "... glad"
 	@echo "... glfw"
+	@echo "... glm_dummy"
 	@echo "... play"
 	@echo "... shader"
 	@echo "... shaders"
 	@echo "... stb_image"
 	@echo "... textures_app"
+	@echo "... transformation"
 	@echo "... triangle"
 	@echo "... window"
 .PHONY : help
